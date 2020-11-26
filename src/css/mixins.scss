@@ -1,0 +1,22 @@
+@mixin flexBox($just: center, $align: flex-start, $dir: row){
+	display: flex;
+	justify-content: $just;
+	align-items: $align;
+	flex-direction: $dir;
+}
+
+@mixin screen__1200{
+	@media screen and(max-width: 1200px){
+		@content;
+	}
+}
+@mixin screen__768{
+	@media screen and(max-width: 768px){
+		@content;
+	}
+}
+@mixin screen__567{
+	@media screen and(max-width: 576px){
+		@content;
+	}
+}

@@ -1,0 +1,140 @@
+@import "./reset.scss";
+@import "./hlcolors.scss";
+@import "./maincolors.scss";
+@import "./card.scss";
+@import "./codebox.scss";
+@import "./mixins.scss";
+
+
+@include screen__768{
+	html{
+		font-size: 10px;
+	}
+}
+
+@include screen__567{
+	html{
+		font-size: 6px;
+	}
+}
+
+.main{
+	width: 100vw;
+	@include flexBox();
+	&__container{
+		margin-top: 148px;
+		margin-bottom: 130px;
+		max-width: 1182px;
+		min-width: 270px;
+		@include screen__1200{
+			max-width: 768px;
+		}
+		@include screen__768{
+			max-width: 80%;
+		}
+		.section{
+			padding-bottom: 5rem;
+			width: 100%;
+			&__title{
+				padding-bottom: 1.4rem;
+				font-size: 2.8125rem;
+			}
+			&__text{
+				font-size: 2rem;
+				line-height: 1.79em;
+				&_selected{
+					font-family: 'Courier Prime', monospace;
+				}
+			}
+			&__rules{
+				padding-top: 1.8rem;
+				font-size: 1.58rem;
+				line-height: 2.3em;
+			}
+			&__code{
+				margin: 30px 0;
+			}
+			&_thin-text{
+				letter-spacing: -0.01em;
+			}
+			&.one{
+				padding-bottom: 3.5rem;
+			}
+			&.two{
+				padding-bottom: 4.2rem;
+			}
+			
+		}
+		.header{
+			padding-bottom: 6.3rem;
+			&__title{
+				@include flexBox(flex-start);
+				font-size: 4.0625rem;
+				font-weight: 700;
+				font-stretch: 200%;
+				letter-spacing: -0.036em;
+				padding-bottom: 3.875rem;
+			}
+			&__text{
+				font-weight: 700;
+				font-size: 2rem;
+				letter-spacing: -0.032em;
+				padding-right: 15px; 
+				line-height: 1.82em;
+			}
+		}
+	}
+}
+
+.main{
+	.tab{
+		width: 100%;
+		padding-bottom: 7rem;
+		&__container{
+				
+		}
+		&__nav{
+			@include flexBox(flex-start);
+			flex-wrap: wrap;
+			align-items: baseline;
+			padding: 30px 25px;
+		}
+		&__links{
+			margin-left: auto;
+			padding-right: 5px;
+		}
+		&__link{
+			font-size: 22px;
+			font-weight: 600;
+			letter-spacing: 0.001em;
+			text-transform: uppercase;
+			color: $colorTabLink;
+			padding-left: 24px;
+			white-space: nowrap;
+			cursor: pointer;
+			&_active{
+				color: $colorTabLinkActive;
+			}
+		}
+		&__title{
+			font-size: 3.4375rem;
+			font-weight: 500;
+			letter-spacing: 0.01rem;
+			white-space: nowrap;
+		}
+		&__table{
+			border: 4px solid rgba(191, 202, 222, 1);;
+			border-radius: 10px;
+			width: 100%;
+			min-height: 570px;
+			padding: 90px 80px;
+			@include screen__768{
+				padding: 20px;
+				min-height: auto;
+			}
+		}
+	}
+}
+
+
+

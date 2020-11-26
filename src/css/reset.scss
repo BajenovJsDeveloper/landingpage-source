@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+h1,h2,h3,h4,h5,h6,p,div,section,header,main,footer,body{
+	display: block;
+}
+*{
+	box-sizing:border-box;
+	text-align: left;
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+input{
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+}
+html{
+	overflow-x: hidden; 
+	font-size: 16px;
+}
+body{
+	font-family: 'Montserrat';
+	letter-spacing: -0.06em;
+	font-weight: 400;
+}
+
+img, video{
+	object-fit: cover;
+	width: 100%;
+}
+button{
+	border:none;
+	font-size: inherit;
+	cursor:pointer;
+}
+ul{
+	list-style: none;
+}

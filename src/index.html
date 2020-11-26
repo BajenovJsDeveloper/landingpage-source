@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/main.scss">
+	<link rel="icon" href="logo/logo.ico">
+</head>
+<body class="main">
+	<div class="main__container">
+		<header class="header" lang="ru">
+			<h1 class="header__title">Front-end test project</h1>
+			<p class="header__text">While work&shy;ing on the so&shy;lu&shy;tion please do not use	the frame&shy;works or com&shy;po&shy;nents that are aval&shy;able on&shy;line. We are in&shy;ter&shy;est&shy;ed in your best judg&shy;ment and ls demon&shy;stra&shy;tion by build&shy;ing some&shy;thing from scratch.
+			</p>
+		</header>
+		<section class="section one">
+			<h2 class="section__title">#1</h2>
+			<p class="section__text">Convert the following image to HTML/CSS/JS. Make it responsive using your best judgment. The font used in the design is Montserrat from Google Fonts. Please create Tabs navigation with vanilla JS. In [BY FONTF] tab show dummy text that is centered by both axis. For Cards component, add Radio button group behavior without javascript. Style Card with 50% opacity then this has active state.</p>
+			<p class="section__rules"><strong>Coding standards:</strong> BEM naming convention.
+				<br><strong>HTML, CSS, JS:</strong> Twig, SASS, vanilla JavaScript. <br>
+				<strong>Supported browsers:</strong> Latest 2 version.
+				<br><strong>Project delivery:</strong> Create a public repo on your Github account and share the project URL with us.
+			</p>
+		</section>
+		<section class="section tab">
+			<div class="tab__container">
+				<div class="tab__nav">
+						<h2 class="tab__title">Please select one font</h2>
+					<span class="tab__links">
+						<span class="tab__link tab__link_active" id="btn-myfonts" tabindex="1" >my fonts</span>
+						<span class="tab__link" id="btn-byfonts" tabindex="2">buy fonts</span>
+					</span>
+				</div>
+				<div class="tab__table">
+					<div class="cards cards__group active" id="tab-myfonts">
+						<div class="cards__container">
+							<div class="card card_big card_col">
+								<div class="card__box">
+									<div class="card__color"></div>
+									<span class="card__logo">M</span>	
+								</div>
+								<div class="card__radio-box">
+									<label class="card__label" for="card1">Merriweather project is led by Sorkin type</label>
+									<input class="card__radio" type="radio" id="card1" name="card">
+									<div class="card__fader"></div>
+								</div>
+							</div>
+						</div>
+						<div class="cards__container">
+							<div class="card">
+								<div class="card__box">
+									<div class="card__color card__color_set1"></div>
+									<span class="card__logo">R</span>	
+								</div>
+								<div class="card__radio-box">
+									<label class="card__label" for="card2">Roboto doesn`t com&shy;pro&shy;mise, al&shy;low&shy;ing let&shy;ters
+									</label>
+									<input class="card__radio" type="radio" id="card2" name="card">
+									<div class="card__fader"></div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__box">
+									<div class="card__color card__color_set2"></div>
+									<span class="card__logo">NS</span>	
+								</div>
+								<div class="card__radio-box">
+									<label class="card__label" for="card3">Noto Sans covers over 30 scripts
+									</label>
+									<input class="card__radio" type="radio" id="card3" name="card">
+									<div class="card__fader"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cards cards__group cards_center" id="tab-byfonts">
+						<p class="cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, saepe. Natus cupiditate eum optio sint aut dolores animi officiis. In quia illum velit praesentium ea eligendi laborum fuga repellendus delectus.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section two">
+			<h2 class="section__title">#2</h2>
+			<p class="section__text section_thin-text">Create a function named <span class="section__text_selected">parseUrl(string)</span>, wich receive URL string and will return object with parsed data. For example:</p>
+			<div class="section__code code">
+				<pre class="code__text">let obj = parseUrl('https://ffwagency.com.do/any.php?a=1#foo')</pre>
+				<pre class="code__text"> </pre>
+				<pre class="code__text">console.log( obj.hash ) // -> #foo</pre>
+				<pre class="code__text">console.log( obj.hostname ) // -> ffwagency.com</pre>
+				<pre class="code__text">console.log( obj.pathname ) // -> /do/any.php</pre>
+			</div>
+			<p class="section__text">The solution must be presented with the minimal amount of lines of code and within a reasonable timeframe.</p>
+		</section>		
+		<footer class="footer">
+			<p class="footer__text">Good luck!</p>
+		</footer>	
+	</div>
+	<script src="js/main.js"></script>
+	<script src="js/parseurl.js"></script>
+</body>
+</html>
